@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).parent
 CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY', default='S#perS3crEt_1122')
+SECRET_KEY = config('SECRET_KEY', default='S#perS3cgsdfgsd4tzv32r1q2re1faasdgrEt_1122')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
@@ -46,7 +46,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 LOGIN_REDIRECT_URL = "dashboard"  # Route defined in dashboard/urls.py
-LOGOUT_REDIRECT_URL = "dashboard"  # Route defined in dashboard/urls.py
+LOGOUT_REDIRECT_URL = "/"  # Route defined in dashboard/urls.py
 TEMPLATE_DIR = os.path.join(CORE_DIR, "apps/templates")  # ROOT dir for templates
 
 TEMPLATES = [
